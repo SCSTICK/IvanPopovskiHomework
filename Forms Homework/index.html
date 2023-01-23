@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms HW</title>
+  </head>
+  <body>
+    <!-- Just a title at the top of the pager -->
+    <header>
+      <h1>(Totally NOT evil) Questionnaire</h1>
+    </header>
+    <!-- A forum for simple question about website user -->
+    <form>
+      <!-- Used to collect name, email and password -->
+      <label for="fname">Full name:</label><br />
+      <input type="text" name="fname" /><br />
+      <label for="email">Email Address:</label><br />
+      <input type="email" name="email" /><br />
+      <label for="pass">Password:</label><br />
+      <input type="password" name="pass" /><br />
+
+      <!-- Used to collect age of user -->
+      <input type="radio" name="age" />
+      <label>Below 18</label><br />
+      <input type="radio" name="age" />
+      <label>18 - 64</label><br />
+      <input type="radio" name="age" />
+      <label>Above 64</label><br />
+
+      <!-- Used so user can provide citiy of origin -->
+      <label for="cities">Select City of Origin: </label>
+      <select id="cities" name="cities">
+        <option value="skope">Skopje</option>
+        <option value="kumanovo">Kumanovo</option>
+        <option value="tetovo">Tetovo</option>
+        <option value="veles">Veles</option>
+        <option value="stip">Stip</option>
+        <option value="prilep">Prilep</option>
+        <option value="ohrid">Ohrid</option>
+        <option value="bitola">Bitola</option>
+        <option value="strumica">Strumica</option>
+      </select>
+      <br />
+
+      <!-- Used so user can provide means of transport -->
+      <input type="checkbox" name="bus" />
+      <label>Bus</label><br />
+      <input type="checkbox" name="train" />
+      <label>Train</label><br />
+      <input type="checkbox" name="car" />
+      <label>Car</label><br />
+      <input type="checkbox" name="bike" />
+      <label>Bike</label><br />
+      <input type="checkbox" name="bicycle" />
+      <label>Bicycle</label><br />
+
+      <!-- Submit button to send forum to cloud, currently very useless -->
+      <input type="submit" name="submitBtn" />
+    </form>
+    <!-- Simple sidebar that would link to different parts of the site, currently only links to my GitHub -->
+    <nav>
+      <a href="https://github.com/SCSTICK">HTML</a> <br />
+      <a href="https://github.com/SCSTICK">CSS</a> <br />
+      <a href="https://github.com/SCSTICK">JavaScript</a>
+    </nav>
+    <!-- Footer with credit to me and my GitHub -->
+    <footer>
+      <p><a href="https://github.com/SCSTICK">Ivan Popovski </a></p>
+    </footer>
+  </body>
+</html>
