@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+    background-image: url(http://www.clker.com/cliparts/K/C/r/p/W/o/grey-oak-tree-hi.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+    background-size: 58% 80%;
+}
+
+h1 {
+    color: antiquewhite; 
+    font-style: italic; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    text-align: center; 
+    line-height: 45px; 
+    font-size: 45px;
+}
+
+.autobiography1 {
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    color: antiquewhite; 
+    font-size: 20px; 
+}
+
+.autobiography2 {
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    color: antiquewhite; 
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;;
+    font-style: oblique;
+}
+
+.autobiography3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: tomato;
+    text-shadow: -1px 6px 10px black;
+    font-size: xx-large;
+    text-align: right;
+}
+
+.foot {
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    color: antiquewhite;
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+}

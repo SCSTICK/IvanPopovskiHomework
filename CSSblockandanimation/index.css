@@ -1,0 +1,135 @@
+/* syling for the first document */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .block {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    background-color: lightblue;
+    white-space: nowrap;
+  }
+  
+  .block-2 {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    overflow: auto;
+    background-color: lightgreen;
+    transform: rotate(0deg);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .block-3 {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    overflow: visible;
+    background-color: lightpink;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .block:hover,
+  .block-3:hover {
+    width: 250px;
+  }
+  
+  .block-2:hover {
+    transform: rotate(90deg);
+  }
+  
+  /* styling for the second doicument */
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .navbar:hover {
+    z-index: 0;
+  }
+  
+  .container {
+    padding-top: 50px;
+    z-index: 2;
+  }
+  
+  .box {
+    width: 50px;
+    height: 50px;
+    display: inline;
+  }
+  
+  .box1 {
+    background-color: blue;
+    animation: rotate 1s linear forwards;
+  }
+  
+  .box2 {
+    background-color: green;
+    animation: pulse 1s linear infinite;
+  }
+
+  /* honestly no idea how to make box 3 and 4 swap */
+  
+  .box3 {
+    background-color: red;
+    animation: swap 2s linear forwards;
+  }
+  
+  .box4 {
+    background-color: yellow;
+    animation: swap2 2s linear forwards;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes swap {
+    0% {
+      transform: translateX(0px) scale(1);
+    }
+    100% {
+      transform: translateX(100px) scale(2);
+    }
+  }
+  
+  @keyframes swap2 {
+    0% {
+      transform: translateX(-100px) scale(2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+  }
