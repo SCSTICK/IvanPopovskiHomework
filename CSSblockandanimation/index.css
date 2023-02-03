@@ -82,17 +82,15 @@
     background-color: green;
     animation: pulse 1s linear infinite;
   }
-
-  /* honestly no idea how to make box 3 and 4 swap */
   
   .box3 {
     background-color: red;
-    animation: swap 2s linear forwards;
+    animation: swap 2s linear infinite;
   }
   
   .box4 {
     background-color: yellow;
-    animation: swap2 2s linear forwards;
+    animation: swap2 2s linear infinite;
   }
   
   @keyframes rotate {
@@ -120,16 +118,22 @@
     0% {
       transform: translateX(0px) scale(1);
     }
+    50% {
+      transform: translateX(525px) scale(2);
+    }
     100% {
-      transform: translateX(100px) scale(2);
+      transform: translateX(0px) scale(2);
     }
   }
   
   @keyframes swap2 {
     0% {
-      transform: translateX(-100px) scale(2);
+      transform: translateX(-100)
+    }
+    50% {
+      transform: translateX(-525px)
     }
     100% {
-      transform: translateX(0px) scale(1);
+      transform: translateX(-100)
     }
   }
