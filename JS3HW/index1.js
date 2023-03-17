@@ -1,5 +1,5 @@
 function countDigits(number) {  // Here the loop counts up the digits in the number, and with Math.floor we devide by 10 to remove the last digit
-    let i = 0;                  // and then incriment the i var, and repeatuntil its 0
+    let i = 0;                  // and then incriment the i var, and repeat until its 0
     while (number !== 0) {
       number = Math.floor(number / 10);
       i++;
