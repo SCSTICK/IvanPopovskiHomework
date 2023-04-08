@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button type="button" onclick="getXML()">GET XML</button>
+    <table id="demo"></table>
+    <script>
+      function getXML() {
+        let xhttp = new XMLHttpRequest();
+        xhttp.onload = function () {
+          // What is supposed to happen when the response arrives
+          console.log(xhttp);
+          let xml = xhttp.responseXML;
+          let first_cd = xml.getElementsByTagName("CD")[0];
+          document.getElementById("demo").innerHTML =
+            "<tr><th>Artist</th></tr><tr><td>" +
+            first_cd.getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+            "</td></tr>";
+        };
+        xhttp.open("GET", "./example.xml");
+        xhttp.send();
+      }
+    </script>
+  </body>
+</html>
